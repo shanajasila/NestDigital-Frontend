@@ -11,7 +11,10 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { NavAdminComponent } from './nav-admin/nav-admin.component'
+import { NavAdminComponent } from './nav-admin/nav-admin.component';
+import { NavHomeComponent } from './nav-home/nav-home.component';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component'
 
 const myRoute : Routes=[
   {
@@ -33,6 +36,14 @@ const myRoute : Routes=[
   {
     path:"emplogin",
     component:EmployeeLoginComponent
+  },
+  {
+    path:"viewemp",
+    component:ViewemployeeComponent
+  },
+  {
+    path:"viewprofile",
+    component:ViewprofileComponent
   }
 ]
 
@@ -44,7 +55,10 @@ const myRoute : Routes=[
     AddEmployeeComponent,
     SearchEmployeeComponent,
     EmployeeLoginComponent,
-    NavAdminComponent
+    NavAdminComponent,
+    NavHomeComponent,
+    ViewemployeeComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,

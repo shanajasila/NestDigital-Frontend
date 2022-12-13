@@ -7,6 +7,9 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
+  fetchemployee=()=>{
+    return this.http.get("http://localhost:8080/view")
+  }
 
   addemployee=(dataTosend:any)=>{
     return this.http.post("http://localhost:8080/addemp",dataTosend)
@@ -17,4 +20,11 @@ export class ApiService {
   deleteEmployee=(dataTosend:any)=>{
     return this.http.post("http://localhost:8080/delete",dataTosend)
   }
+  userlogin=(dataTosend:any)=>{
+    return this.http.post("http://localhost:8080/login",dataTosend)
+  }
+  viewprofile=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewprofile",data)
+  }
+
 }
