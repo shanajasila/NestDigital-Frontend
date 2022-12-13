@@ -8,6 +8,33 @@ import { HomeComponent } from './home/home.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { NavAdminComponent } from './nav-admin/nav-admin.component'
+
+const myRoute : Routes=[
+  {
+    path:"",
+    component:HomeComponent
+  },
+  {
+    path:"adminlogin",
+    component:AdminLoginComponent
+  },
+  {
+    path:"addemp",
+    component:AddEmployeeComponent
+  },
+  {
+    path:"searchemp",
+    component:SearchEmployeeComponent
+  },
+  {
+    path:"emplogin",
+    component:EmployeeLoginComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,11 +43,15 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
     HomeComponent,
     AddEmployeeComponent,
     SearchEmployeeComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    NavAdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(myRoute),
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
