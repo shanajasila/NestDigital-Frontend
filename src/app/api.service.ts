@@ -26,5 +26,9 @@ export class ApiService {
   viewprofile=(data:any)=>{
     return this.http.post("http://localhost:8080/viewprofile",data)
   }
+  
+  applyLeave=(data:any)=>{
+      return this.http.post("http://localhost:8080/applyleave",data);
+    }
 
 }

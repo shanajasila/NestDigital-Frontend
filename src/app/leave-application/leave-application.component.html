@@ -1,8 +1,8 @@
-<app-nav-admin></app-nav-admin>
+<app-nav-emp></app-nav-emp>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-light">
-            <h1 class="text-center mt-4">Add Employee</h1>
+            <h1 class="text-center mt-4">Apply For Leave</h1>
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
                     <label for="" class="form-label">Employee Code</label>
@@ -13,29 +13,35 @@
                     <input type="text" name="empname" [(ngModel)]="empname"   class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
-                    <label for="" class="form-label">Designation</label>
-                    <input type="text" name="designation" [(ngModel)]="designation"  class="form-control">
+                    <label for="" class="form-label">From Date</label>
+                    <input type="date" name="fromdate" [(ngModel)]="fromdate" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
-                    <label for="" class="form-label">Email</label>
-                    <input type="text" name="email" [(ngModel)]="email"  class="form-control">
+                    <label for="" class="form-label">To Date</label>
+                    <input type="date"  name="todate" [(ngModel)]="todate" class="form-control">
                 </div>
+
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
-                    <label for="" class="form-label">Mobile Number</label>
-                    <input type="text" name="contact" [(ngModel)]="contact"  class="form-control">
+                    <label for="" class="form-label">Leave Type : </label>
+                    <select  name="leavetype" [(ngModel)]=" leavetype" id="typ">
+                      
+                          <option  value="casual">Casual Leave</option>
+                          <option value="sick">Sick Leave</option>
+                          <option value="special">Special Leave</option>
+                       
+                    </select>
+                
                 </div>
+
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
-                    <label for="" class="form-label">Username</label>
-                    <input type="text" name="username" [(ngModel)]="username"  class="form-control">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-5">
-                    <label for="" class="form-label">Password</label>
-                    <input type="password" name="password" [(ngModel)]="password" class="form-control">
+                    <label for="" class="form-label">Reason</label>
+                    <input type="text" name="reason" [(ngModel)]="reason" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center pt-5">
-                    <button (click)="readValues()" class="btn btn-success">Submit</button>
+                    <button (click)="readvalues()" class="btn btn-success ">Apply</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
