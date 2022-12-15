@@ -1,0 +1,16 @@
+.navbar{
+   font-size: 20px;
+   padding: 0px 20px; 
+
+}
+#nav a:hover {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: rgb(238, 234, 234);
+}
