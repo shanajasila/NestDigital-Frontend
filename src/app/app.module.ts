@@ -14,7 +14,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { NavHomeComponent } from './nav-home/nav-home.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
-import { ViewprofileComponent } from './viewprofile/viewprofile.component'
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { NavEmpComponent } from './nav-emp/nav-emp.component'
 
 const myRoute : Routes=[
   {
@@ -58,7 +59,8 @@ const myRoute : Routes=[
     NavAdminComponent,
     NavHomeComponent,
     ViewemployeeComponent,
-    ViewprofileComponent
+    ViewprofileComponent,
+    NavEmpComponent
   ],
   imports: [
     BrowserModule,

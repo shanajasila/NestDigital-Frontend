@@ -1,14 +1,25 @@
-<div class="row">
-    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 "*ngFor="let i of data">
-        <div class="card " >
-            <div class="card-body">
-              <h5 class="card-title">Name : {{i.empname}}</h5>
+<app-nav-emp></app-nav-emp>
+<div class="container">
+  <div class="row g-3 mt-4">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <h2 class="text-center" style="color:#c2c3d8;font-size:xx-large; line-height: 1.5;font-size: 40px;">Profile </h2>
+      </div>    
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <img height="400px" src="https://www.internetmatters.org/connecting-safely-online/wp-content/uploads/sites/2/2020/06/Parents-Personal-Info.png" alt="">
+           </div>
+           
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 "*ngFor="let i of data">
+                <div class="card text-center " style="height: 400px;">
+                    <div class="card-body " >
+                      <h5 class="card-title mt-5" style="font-size: 50px;" > {{i.empname}}</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item ">Adress : {{i.empcode}}</li>
+                      <li class="list-group-item">Email Id : {{i.email}}</li>
+                      <li class="list-group-item">Contact No : {{i.contact}}</li>
+                    </ul>
+                  </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Adress : {{i.empcode}}</li>
-              <li class="list-group-item">Email Id : {{i.email}}</li>
-              <li class="list-group-item">Contact No : {{i.contact}}</li>
-            </ul>
-          </div>
-    </div>
+      
+  </div>
 </div>

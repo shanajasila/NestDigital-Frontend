@@ -1,13 +1,15 @@
+<section id="sec">
 <div class="container mt-5">
     <div class="centered col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <h3 class="text-center top"style="color:#323773;line-height: 1.5;font-size: 40px;top: 8px;">Admin Login</h3>
-            <label for="" class="form-label pt-5">Username</label>
+        <h3 class="text-center text-light" style="font-size: 40px;">Admin Login</h3>
+            <label for="" class="form-label pt-5 text-light">Username</label>
             <input type="text" name="username" [(ngModel)]="username" class="form-control">
-            <label for="" class="form-label pt-5">Password</label>
+            <label for="" class="form-label pt-5 text-light">Password</label>
             <input type="password" id="" name="Password" [(ngModel)]="Password" class="form-control">
     </div>        
          <div class=" col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
             <button (click)="readvalues()"  class="btn btn-success mt-5 ">Login</button> 
-            <div> <a routerLink="" style="font-size:20px ;">Back To Home Page</a></div>    
+            <div class="pt-5"> <a routerLink="" style="font-size:20px ;">Back To Home Page</a></div>    
         </div>    
 </div>
+</section>
