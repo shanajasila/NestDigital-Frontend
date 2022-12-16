@@ -36,8 +36,17 @@ export class ApiService {
   fetchsecurity=()=>{
     return this.http.get("http://localhost:8080/viewsec")
   }
-  leaveRequest=(data:any)=>{
-    return this.http.post("http://localhost:8080/viewalleavebyemp",data)
+  fetchRequest=()=>{
+    return this.http.get("http://localhost:8080/viewalleavebyemp")
+  }
+  updatestatus=(dataTosend:any)=>{
+    return this.http.post("http://localhost:8080/update",dataTosend)
+  }
+  viewstatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchstatus",data)
+  }
+  searchStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchstatus",data)
   }
 
 }

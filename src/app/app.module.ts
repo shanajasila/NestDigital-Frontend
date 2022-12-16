@@ -18,7 +18,9 @@ import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { NavEmpComponent } from './nav-emp/nav-emp.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
-import { ViewSecurityComponent } from './view-security/view-security.component'
+import { ViewSecurityComponent } from './view-security/view-security.component';
+import { LeaveRequestsComponent } from './leave-requests/leave-requests.component';
+import { ViewstatusComponent } from './viewstatus/viewstatus.component'
 
 const myRoute : Routes=[
   {
@@ -59,6 +61,14 @@ const myRoute : Routes=[
   {
     path:"viewsec",
     component:ViewSecurityComponent
+  },
+  {
+    path:"leaverequest",
+    component:LeaveRequestsComponent
+  },
+  {
+    path:"viewstatus",
+    component:ViewstatusComponent
   }
 ]
 
@@ -77,7 +87,9 @@ const myRoute : Routes=[
     NavEmpComponent,
     LeaveApplicationComponent,
     AddSecurityComponent,
-    ViewSecurityComponent
+    ViewSecurityComponent,
+    LeaveRequestsComponent,
+    ViewstatusComponent
   ],
   imports: [
     BrowserModule,

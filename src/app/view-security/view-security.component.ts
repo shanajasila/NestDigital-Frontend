@@ -12,7 +12,7 @@ export class ViewSecurityComponent {
   securityname=""
   contactno=""
   username=""
-  password=""
+ 
 
   constructor(private api:ApiService){
     api.fetchsecurity().subscribe(
