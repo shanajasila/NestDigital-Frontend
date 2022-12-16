@@ -1,0 +1,24 @@
+<app-navsecurity></app-navsecurity>
+<div class="container">
+    <div class="row g-3 mt-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h2 class="text-center" style="color:#e7e7f0;font-size:xx-large; line-height: 1.5;font-size: 40px;">Security Profile </h2>
+        </div>    
+            <div class="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <img height="400px" src="https://www.internetmatters.org/connecting-safely-online/wp-content/uploads/sites/2/2020/06/Parents-Personal-Info.png" alt="">
+             </div>
+             
+              <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 "*ngFor="let i of data">
+                  <div class="card text-center " style="height: 400px;">
+                      <div class="card-body " >
+                        <h5 class="card-title mt-5" style="font-size: 50px;" > {{i.securityname}}</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item ">Security Code : {{i.code}}</li>
+                        <li class="list-group-item">Contact No : {{i.contactno}}</li>
+                      </ul>
+                    </div>
+              </div>
+        
+    </div>
+  </div>

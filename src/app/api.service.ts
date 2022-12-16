@@ -48,5 +48,8 @@ export class ApiService {
   searchStatus=(data:any)=>{
     return this.http.post("http://localhost:8080/searchstatus",data)
   }
+  addemployeelog=(data:any)=>{
+    return this.http.post("http://localhost:8080/emplog",data)
+  }
 
 }

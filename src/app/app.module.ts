@@ -20,7 +20,11 @@ import { LeaveApplicationComponent } from './leave-application/leave-application
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { LeaveRequestsComponent } from './leave-requests/leave-requests.component';
-import { ViewstatusComponent } from './viewstatus/viewstatus.component'
+import { ViewstatusComponent } from './viewstatus/viewstatus.component';
+import { EmplogComponent } from './emplog/emplog.component';
+import { NavsecurityComponent } from './navsecurity/navsecurity.component';
+import { SecurityloginComponent } from './securitylogin/securitylogin.component';
+import { SecurityProfileComponent } from './security-profile/security-profile.component'
 
 const myRoute : Routes=[
   {
@@ -69,6 +73,18 @@ const myRoute : Routes=[
   {
     path:"viewstatus",
     component:ViewstatusComponent
+  },
+  {
+    path:"emplog",
+    component:EmplogComponent
+  },
+  {
+    path:"seclogin",
+    component:SecurityloginComponent
+  },
+  {
+    path:"secprofile",
+    component:SecurityProfileComponent
   }
 ]
 
@@ -89,7 +105,11 @@ const myRoute : Routes=[
     AddSecurityComponent,
     ViewSecurityComponent,
     LeaveRequestsComponent,
-    ViewstatusComponent
+    ViewstatusComponent,
+    EmplogComponent,
+    NavsecurityComponent,
+    SecurityloginComponent,
+    SecurityProfileComponent
   ],
   imports: [
     BrowserModule,
