@@ -10,10 +10,10 @@ export class ViewemployeeComponent {
   empcode=""
   empname=""
  designation=""
-  contact=""
+ contact=""
   email=""
- username=""
-  password=""
+  
+
 
   constructor(private api:ApiService){
     api.fetchemployee().subscribe(

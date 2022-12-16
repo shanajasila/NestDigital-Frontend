@@ -1,0 +1,41 @@
+<app-nav-admin></app-nav-admin>
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1 class="text-light text-center">Leave Requests</h1>
+        <table class="table table-bordered  text-center text-light mt-5">
+            <thead>
+                <tr>
+                  
+                    <th>Employee Name</th>
+                    <th>Employee Code</th>
+                    <th>Leave Type</th>
+                    <th>Reason</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>Apply Date</th>
+                    <th>Status</th>
+                    <th></th>
+                    <th></th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of data">
+                   
+                    <td>{{i.empname}}</td>
+                    <td>{{i.empcode}}</td>
+                    <td>{{i.leavetype}}</td>
+                    <td>{{i.reason}}</td>
+                    <td>{{i.fromdate}}</td>
+                    <th>{{i.todate}}</th>
+                    <th>{{i.applydate}}</th>
+                    <th>{{i.status}}</th>
+                    <th><button (click)="acceptvalue(i.empid)" class="btn btn-success">Accept</button></th>
+                    <th><button (click)="rejectvalue(i.empid)" class="btn btn-danger">Reject</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
