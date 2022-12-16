@@ -45,8 +45,8 @@ export class ApiService {
   viewstatus=(data:any)=>{
     return this.http.post("http://localhost:8080/searchstatus",data)
   }
-  accept=(data:any)=>{
-    return this.http.post("",data)
+  searchStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchstatus",data)
   }
 
 }

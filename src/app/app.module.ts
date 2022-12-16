@@ -19,7 +19,8 @@ import { NavEmpComponent } from './nav-emp/nav-emp.component';
 import { LeaveApplicationComponent } from './leave-application/leave-application.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
-import { LeaveRequestsComponent } from './leave-requests/leave-requests.component'
+import { LeaveRequestsComponent } from './leave-requests/leave-requests.component';
+import { ViewstatusComponent } from './viewstatus/viewstatus.component'
 
 const myRoute : Routes=[
   {
@@ -64,6 +65,10 @@ const myRoute : Routes=[
   {
     path:"leaverequest",
     component:LeaveRequestsComponent
+  },
+  {
+    path:"viewstatus",
+    component:ViewstatusComponent
   }
 ]
 
@@ -83,7 +88,8 @@ const myRoute : Routes=[
     LeaveApplicationComponent,
     AddSecurityComponent,
     ViewSecurityComponent,
-    LeaveRequestsComponent
+    LeaveRequestsComponent,
+    ViewstatusComponent
   ],
   imports: [
     BrowserModule,
