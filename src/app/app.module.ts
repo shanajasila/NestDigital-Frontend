@@ -16,7 +16,9 @@ import { NavHomeComponent } from './nav-home/nav-home.component';
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 import { NavEmpComponent } from './nav-emp/nav-emp.component';
-import { LeaveApplicationComponent } from './leave-application/leave-application.component'
+import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component'
 
 const myRoute : Routes=[
   {
@@ -50,6 +52,13 @@ const myRoute : Routes=[
   {
     path:"apply",
     component:LeaveApplicationComponent
+  },{
+    path:"addsec",
+    component:AddSecurityComponent
+  },
+  {
+    path:"viewsec",
+    component:ViewSecurityComponent
   }
 ]
 
@@ -66,7 +75,9 @@ const myRoute : Routes=[
     ViewemployeeComponent,
     ViewprofileComponent,
     NavEmpComponent,
-    LeaveApplicationComponent
+    LeaveApplicationComponent,
+    AddSecurityComponent,
+    ViewSecurityComponent
   ],
   imports: [
     BrowserModule,
