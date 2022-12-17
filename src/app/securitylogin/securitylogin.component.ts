@@ -17,7 +17,7 @@ export class SecurityloginComponent {
     readvalue=()=>{
       let data={"username":this.username,"password":this.password}
       console.log(data)
-      this.api.userlogin(data).subscribe(
+      this.api.securityLogin(data).subscribe(
         (response:any)=>{
           this.username=""
             this.password=""

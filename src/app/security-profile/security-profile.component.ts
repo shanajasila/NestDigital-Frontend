@@ -17,7 +17,7 @@ userId:any=""
 constructor(private api:ApiService){
   this.userId=localStorage.getItem("userInfo")
   let data:any={"id":this.userId}
-  this.api.viewprofile(data).subscribe(
+  this.api.viewSecurityProfile(data).subscribe(
     (response)=>{
       console.log(response)
       this.data=response
