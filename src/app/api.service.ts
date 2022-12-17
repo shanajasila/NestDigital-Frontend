@@ -57,5 +57,13 @@ export class ApiService {
   viewSecurityProfile=(data:any)=>{
     return this.http.post("http://localhost:8080/viewprofilesec",data)
   }
-
+  addVisitorslog=(data:any)=>{
+    return this.http.post("http://localhost:8080/logvisitor",data)
+  }
+  viewemplog=()=>{
+    return this.http.get("http://localhost:8080/viewallemplog")
+  }
+  viewvisitorlog=()=>{
+    return this.http.get("")
+  }
 }

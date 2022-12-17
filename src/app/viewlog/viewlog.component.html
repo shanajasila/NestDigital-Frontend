@@ -1,0 +1,58 @@
+<app-navsecurity></app-navsecurity>
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1 class="text-light pt-5">Employee Log</h1>
+        <table class="table  table-bordered text-center text-light mt-5">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Entry_datetime</th>
+                    <th>Exit_datetime</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of employee">
+                    <td>{{i.empcode}}</td>
+                    <td>{{i.date}}</td>
+                    <td>{{i.entry_datetime}}</td>
+                    <td>{{i.exit_datetime}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <h1 class="text-light pt-5">Visitors Log</h1>
+    <table class="table  table-bordered text-center text-light mt-5">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Entry_datetime</th>
+                <th>Exit_datetime</th>
+                <th>Purpose</th>
+                <th>Whome to meet</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of employee">
+                <td>{{i.id}}</td>
+                <td>{{i.naem}}</td>
+                <td>{{i.empname}}</td>
+                <td>{{i.designation}}</td>
+                <td>{{i.email}}</td>
+                <th>{{i.contact}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    </div>
+</div>
+

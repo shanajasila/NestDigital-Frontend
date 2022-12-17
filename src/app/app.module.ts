@@ -24,7 +24,9 @@ import { ViewstatusComponent } from './viewstatus/viewstatus.component';
 import { EmplogComponent } from './emplog/emplog.component';
 import { NavsecurityComponent } from './navsecurity/navsecurity.component';
 import { SecurityloginComponent } from './securitylogin/securitylogin.component';
-import { SecurityProfileComponent } from './security-profile/security-profile.component'
+import { SecurityProfileComponent } from './security-profile/security-profile.component';
+import { VisitorslogComponent } from './visitorslog/visitorslog.component';
+import { ViewlogComponent } from './viewlog/viewlog.component'
 
 const myRoute : Routes=[
   {
@@ -85,6 +87,13 @@ const myRoute : Routes=[
   {
     path:"secprofile",
     component:SecurityProfileComponent
+  },
+  {
+    path:"visitorsLog",
+    component:VisitorslogComponent
+  },{
+    path:"viewlog",
+    component:ViewlogComponent
   }
 ]
 
@@ -109,7 +118,9 @@ const myRoute : Routes=[
     EmplogComponent,
     NavsecurityComponent,
     SecurityloginComponent,
-    SecurityProfileComponent
+    SecurityProfileComponent,
+    VisitorslogComponent,
+    ViewlogComponent
   ],
   imports: [
     BrowserModule,
