@@ -14,22 +14,38 @@
               <li class="nav-item">
                 <a class="nav-link active text-light" aria-current="page" routerLink="/secprofile">View profile</a>
               </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" routerLink="/emplog">Add Employee log</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" routerLink="/visitorsLog">Add Visitors Log</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" routerLink="/viewlog">view logs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" routerLink="">view Daily log</a>
-          </li>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Add
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/emplog">Employee Log</a></li>
+              <li><a class="dropdown-item" routerLink="/visitorsLog">Visitors Log</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              View logs
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/viewlog">Employee </a></li>
+              <li><a class="dropdown-item" routerLink="/viewVisitors">Visitors </a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              View Daily log
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/dailyEmp">Employee </a></li>
+              <li><a class="dropdown-item" routerLink="/dailyVisitors">Visitors </a></li>
+            </ul>
+          </div>
           <li class="nav-item">
             <a class="nav-link active text-light" aria-current="page" routerLink="/seclogin">Logout</a>
             
           </li>
+          
           
         </ul>
       </div>

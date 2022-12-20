@@ -1,0 +1,35 @@
+<app-navsecurity></app-navsecurity>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <h1 class="text-light mt-5">View Daily Logs</h1>
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label text-light mt-5">Date</label>
+                    <input name="date" [(ngModel)]="date" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="readValues()" class="btn btn-success mt-3">Search</button>
+                </div>
+                <div class="container mt-5">
+                    <div class="row g-3">
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                            <div class="card" style="height:36rem" >
+                                <img height="200px" src="https://icons.veryicon.com/png/Business/Pretty%20Office/Personal%20information.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Name: {{i.name}}</h5>
+                                    <p>Id : {{i.id}}</p>
+                                    <p class="card-text">Date: {{i.date}}</p>
+                                    <p>Purpose : {{i.purpose}}</p>
+                                    <p>Whome to meet : {{i.whomtomeet}}</p>
+                                  <p class="card-text">Entry : {{i.entry_datetime}}</p>
+                                  <p class="card-text">Exit : {{i.exit_datetime}}</p>
+                                </div>
+                              </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

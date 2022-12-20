@@ -64,6 +64,12 @@ export class ApiService {
     return this.http.get("http://localhost:8080/viewallemplog")
   }
   viewvisitorlog=()=>{
-    return this.http.get("")
+    return this.http.get("http://localhost:8080/viewallvisitorlog")
+  }
+  dailyemplog=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewdailyemplog",data)
+  }
+  dailyvisitorslog=(data:any)=>{
+    return this.http.post("http://localhost:8080/viewDailyVisitorlog",data)
   }
 }

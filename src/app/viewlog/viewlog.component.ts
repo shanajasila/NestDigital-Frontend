@@ -11,9 +11,7 @@ export class ViewlogComponent {
   date=""
   entry_datetime=""
   exit_datetime=""
-  name=""
-  whomtomeet=""
-  purpose=""
+ 
 
 
   constructor(private api:ApiService){
